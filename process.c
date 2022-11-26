@@ -25,9 +25,9 @@ void  ChildProcess(void)
 {
      int   i;
 
-     for (i = 1; i <= (rand() % 30 + 1); i++){
+     for (i = 1; i <= (rand() % 31); i++){
           printf("Child Pid: %d is going to sleep!\n", getpid());
-          sleep(rand() % 10 + 1);
+          sleep(rand() % 11);
           printf("Child Pid: %d is awake!\nWhere is my Parent: %d?\n", getpid(),getppid());
      }
      exit(0);
